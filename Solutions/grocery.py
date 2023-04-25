@@ -13,8 +13,8 @@ grocerylist = {}                                        # Define the grocery lis
 
         except EOFError:                                # When the user ends input
 
-            for n in sorted(grocerylist.keys()):        # Sort the grocery list items (keys) alphabetically, and iterate through the items
-                print(grocerylist[n], n)                # Print the amount and then the name of the item
+            for _ in sorted(grocerylist.keys()):        # Sort the grocery list items (keys) alphabetically, and iterate through the items
+                print(grocerylist[_], _)                # Print the amount and then the name of the item
                 
             break                                       # Then stop
 
