@@ -1,17 +1,12 @@
 def main():
 
-    # Prompt user for input and prepare to print output
-    tweet = input("Input: ")
-    print("Output: ", end="")
+    tweet = input("Input: ")                # Prompt user for input
+    print("Output: ", end="")               # Start printing output, skip the new line
 
-    # Iterate through each letter in the input
-    # If it's not a vowel, print it.
-    # Vowels get skipped.
-    for letter in tweet:
-        if letter.lower() not in 'aeiou':
-            print(letter, end="")
-
-    # Print a new line at the end
-    print("")
+    for letter in tweet:                    # Iterate through each letter in the input
+        if letter.lower() not in 'aeiou':   # If it's not a vowel,
+            print(letter, end="")           # print it.
+            
+    print("")                               # Print a new line at the end
 
 main()
