@@ -1,25 +1,21 @@
 def main():
 
-    list = []                               # Make an empty list for the user's inputs
-    total = {}                              # Make an empty dict for storing the total amounts
+grocerylist = {}                                        # Define the grocery list as a dict
 
-    while True:
+    while True:                                         # Initiate an infinite loop to keep prompting the user
         try:
-            item = input("").upper()        # Prompt the user for input
-            list.append(item)               # Add it to the end of the list
-            list.sort()                     # Sort the list alphabetically
+            item = input().upper()                      # Ask for an item
 
-        except EOFError:                    # When user ends input
+            if item not in grocerylist:                 # If the item isn't on the list already,
+                grocerylist[item] = 1                   # put it there and set its value (amount) to 1
+            else:
+                grocerylist[item] += 1                  # Otherwise it's already there, so increase its value by 1.
 
-            for item in list:               # Iterate through the list
-                if item not in total:       # If the item is not yet in the dict
-                    total[item] = 1         # Put it there and give it a value of 1
-                else:
-                    total[item] += 1        # Otherwise increase its value by 1
+        except EOFError:                                # When the user ends input
 
-            for _ in total:                 # Iterate through each item in the dict
-                print(f"{total[_]} {_}")    # Print the value (amount), a space, and the item's name
-
-            break                           # Then stop
+            for n in sorted(grocerylist.keys()):        # Sort the grocery list items (keys) alphabetically, and iterate through the items
+                print(grocerylist[n], n)                # Print the value (amount) and then the name of the item (key)
+                
+            break                                       # Then stop
 
 main()
