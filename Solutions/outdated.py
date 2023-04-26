@@ -5,7 +5,7 @@ def main():
 
         # Ask the user for input and try to pass it through the conversion function
         try:
-            user_input = input("Date: ")
+            user_input = input("Date: ").strip()
             user_input = ISO8601_convert(user_input)
             print(user_input)
             break
