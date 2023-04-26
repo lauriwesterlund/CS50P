@@ -7,7 +7,7 @@ def main():
         try:
             user_input = input("Date: ")
             user_input = ISO8601_convert(user_input)
-            print(f"{user_input}")
+            print(user_input)
             break
 
         # This catches bad inputs, e.g. wrong format or the numbers don't make a valid date
