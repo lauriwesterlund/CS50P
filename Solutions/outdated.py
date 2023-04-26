@@ -10,7 +10,7 @@ def main():
             print(user_input)
             break
 
-        # This catches bad inputs, e.g. wrong format or the numbers don't make a valid date
+        # This catches bad inputs, e.g. wrong format or numbers that don't make a valid date
         except (ValueError):
             pass
 
@@ -62,10 +62,6 @@ def ISO8601_convert(date):
         # If we still get a ValueError here, then the input was definitely bad and we need to prompt again
         except ValueError:
             raise ValueError
-
-
-
-
 
 
 
