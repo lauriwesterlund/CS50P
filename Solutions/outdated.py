@@ -36,7 +36,7 @@ def ISO8601_convert(date):
         else:
             return (f"{str(y).zfill(4)}-{str(m).zfill(2)}-{str(d).zfill(2)}")
 
-    # If the split doesn't work, try the other format instead
+    # If the split doesn't work as expected, try the other format instead
     except ValueError:
 
         try:
