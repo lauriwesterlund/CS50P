@@ -1,1 +1,0 @@
-x, y = input("Fraction: ").split("/")                       # Prompt user for a fraction and split it
