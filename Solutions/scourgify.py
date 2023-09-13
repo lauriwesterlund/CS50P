@@ -10,7 +10,7 @@ def main():
     scourgify(sys.argv[1], sys.argv[2])
 
 
-def scourgify(file, output):
+def scourgify(input, output):
 
     """ Read a CSV file and make a new one where the students' first and last names are split to their own columns"""
     newFile = []
@@ -18,7 +18,7 @@ def scourgify(file, output):
 
     # Read through the source file
     try:
-        with open(file) as file:
+        with open(input) as file:
             reader = csv.DictReader(file)
 
             # Split the first and last names, and hold everything in newFile
