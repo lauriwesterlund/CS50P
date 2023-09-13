@@ -1,7 +1,7 @@
-Here are my solutions to CS50P problems.
+Here are my solutions to CS50P problems (2022).
 
-All problems are solved using the tools provided on the course up to that point.
+All problems have been solved using the tools provided on the course up to that point, and the solutions pass Check50.
 
-Most of the code comes with comments that explain what it's doing, except for the simplest problems from the early problem sets.
+Most of the code includes comments, except for some of the simpler problems.
 
 If a problem from an earlier problem set is revisited in a later problem set, only the revisited version exists here.
