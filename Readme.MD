@@ -4,4 +4,4 @@ All problems have been solved using the tools provided on the course up to that 
 
 Most of the code includes comments, except for some of the simpler problems.
 
-If a problem from an earlier problem set is revisited in a later problem set, only the revisited version exists here.
+If a problem from an earlier problem set is revisited in a later set, only the revisited version exists here.
