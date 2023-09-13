@@ -28,7 +28,7 @@ def scourgify(input, output):
 
     # Except if the source file doesn't exist
     except FileNotFoundError:
-        sys.exit(f"Could not read {file}")
+        sys.exit(f"Could not read {input}")
 
     # Write a new file with the information stored in newFile
     with open(output, "w") as file:
